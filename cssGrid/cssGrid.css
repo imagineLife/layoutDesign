@@ -17,18 +17,6 @@ body{
 }
 
 
-/*
-GRID-START POSITIONS
-*/
-
-.st1{
-  grid-row-start: 1;
-}
-
-.st7{
-  grid-row-start: 7;
-}
-
 /* Grid measurements:
  *
     TOTAL WIDTH
@@ -47,12 +35,12 @@ GRID-START POSITIONS
  *
  **/
 
-.row::after {
-  /*clear: both;*/
-}
 
-.gr-6, .gr-12 {
-  /*float: left;*/
+/*
+  gr-specific padding
+*/
+
+.gr-2-3, .gr-3, .gr-4, .gr-6, .gr-12 {
 
   /* Gutters:
    * Each column is padded by half-a-gutter on each side,
@@ -64,27 +52,35 @@ GRID-START POSITIONS
   padding-right: 1.04166666%;
 }
 
-/* Mobile defaults */
-.gr-2, .gr-2-3, .gr-3, .gr-4, .gr-6, .gr-12 {
-  grid-column-end: span 12;
-}
-
-@media only screen and (min-width: 450px){
-  .col-2-3{
-    /*width: 50%;*/
-  }
-}
-
-
 
 /*
 MOBILE-FIRST
 Grid Layout
 */
-
-.gr-6, .gr-12{
+.gr-2, .gr-2-2, .gr-2-3, .gr-3, .gr-4, .gr-6, .gr-12 {
   grid-column-end: span 12;
 }
+
+
+
+
+
+/*
+mid-screens-size resizing
+*/
+@media only screen and (min-width: 450px){
+  .gr-2-2{
+    grid-column-end: span 4;
+  }
+
+  .gr-2-3{
+    grid-column-end: span 6;
+  }
+
+
+}
+
+
 
 
 
@@ -94,17 +90,12 @@ Grid Layout
 @media only screen and (min-width: 640px) {
   
   /* 2 columns, 2/12 in % */  
-  .gr-2{
-    /*width: 16.666667%;*/
+  .gr-2, .gr-2-2{
+    grid-column-end: span 2;
   }
 
   /* 3 columns, 3/12 in % */
   .gr-3, .gr-2-3 {
-    /*width: 25%;*/
-  }
-
-  /* 3 columns, 3/12 in % */
-  .gr-3 {
     grid-column-end: span 3;
   }
 
