@@ -1,18 +1,14 @@
-main {
-  padding-top: 100px;
-}
-
-/*main .row {
-  margin-bottom: 20px;
-}*/
-
-.box {
-  height: 200px;
+section{
   text-align: center;
-  padding-top: 30px;
-  margin-bottom: 20px;
+  padding: 1%;
 }
 
+
+/*
+
+COLORS
+
+*/
 .black {
   background-color: black;
   color: white;
@@ -28,4 +24,11 @@ main {
 
 .blue {
   background-color: blue;
+}
+
+.box{
+  height: 200px;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
 }
