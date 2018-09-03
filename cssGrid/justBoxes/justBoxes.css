@@ -26,6 +26,18 @@ COLORS
   background-color: blue;
 }
 
+.indigo {
+  background-color: indigo;
+}
+
+.maroon {
+  background-color: maroon;
+}
+
+.turq {
+  background-color: turquoise;
+}
+
 .box{
   height: 200px;
   text-align: center;
