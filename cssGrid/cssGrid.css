@@ -74,7 +74,7 @@ Grid Layout
 /*
 8-grid mobile-first
 */
-.gr8-1, .gr8-2, .gr8-4, .gr8-8{
+.gr8-1, .gr8-1-2, .gr8-2, .gr8-4, .gr8-8{
   grid-column-end: span 12;
 }
 
@@ -90,6 +90,10 @@ mid-screens-size resizing
 
   .gr-2-3{
     grid-column-end: span 6;
+  }
+
+  .gr8-1-2{
+    grid-column-end: span 2;
   }
 
 
@@ -129,6 +133,14 @@ mid-screens-size resizing
   */
   .gr8-4{
     grid-column-end: span 4;
+  }
+
+  .gr8-2{
+    grid-column-end: span 2; 
+  }
+
+  .gr8-1, .gr8-1-2{
+    grid-column-end: span 1;
   }
 
 
